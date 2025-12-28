@@ -1,29 +1,29 @@
-import React from 'react';
-import { Star, MessageCircle, TrendingUp } from 'lucide-react';
+import React from "react";
+import { Star, MessageCircle, TrendingUp } from "lucide-react";
 
 const ProofSection: React.FC = () => {
   const testimonials = [
     {
       name: "Juliana S.",
       role: "Empreendedora",
-      text: "O Mateus me entregou o site em dois dias! Além de lindo, aumentou meus contatos pelo WhatsApp já na primeira semana.",
+      text: "O Guilherme me entregou o site em dois dias! Além de lindo, aumentou meus contatos pelo WhatsApp já na primeira semana.",
       rating: 5,
-      highlight: "Aumento de contatos em 1 semana"
+      highlight: "Aumento de contatos em 1 semana",
     },
     {
       name: "Leandro V.",
       role: "Consultor",
       text: "Simplesmente sensacional. O site ficou profissional e me economizou tempo e dor de cabeça. Vale cada centavo.",
       rating: 5,
-      highlight: "Economizou tempo e dinheiro"
+      highlight: "Economizou tempo e dinheiro",
     },
     {
       name: "Carla M.",
       role: "Loja Online",
       text: "Finalmente um desenvolvedor que entende de prazo! Site entregue no tempo prometido e com qualidade excepcional.",
       rating: 5,
-      highlight: "Prazo cumprido com qualidade"
-    }
+      highlight: "Prazo cumprido com qualidade",
+    },
   ];
 
   return (
@@ -46,14 +46,19 @@ const ProofSection: React.FC = () => {
             <div key={index} className="card-float p-6">
               <div className="flex items-center mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                  <Star
+                    key={i}
+                    className="h-5 w-5 text-yellow-400 fill-current"
+                  />
                 ))}
               </div>
               <blockquote className="text-gray-700 mb-4 italic">
                 "{testimonial.text}"
               </blockquote>
               <div className="border-t pt-4">
-                <div className="font-semibold text-gray-900">{testimonial.name}</div>
+                <div className="font-semibold text-gray-900">
+                  {testimonial.name}
+                </div>
                 <div className="text-gray-600 text-sm">{testimonial.role}</div>
                 <div className="bg-green-50 text-green-700 text-xs px-2 py-1 rounded-full mt-2 inline-block">
                   <TrendingUp className="h-3 w-3 inline mr-1" />
@@ -71,7 +76,10 @@ const ProofSection: React.FC = () => {
           <p className="text-lg mb-6 opacity-90">
             Junte-se aos empreendedores que já estão vendendo online
           </p>
-          <a href="#contato" className="bg-white text-blue-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors inline-block">
+          <a
+            href="#contato"
+            className="bg-white text-blue-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors inline-block"
+          >
             Quero Fazer Parte
           </a>
         </div>

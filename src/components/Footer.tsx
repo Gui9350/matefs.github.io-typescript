@@ -1,11 +1,20 @@
-import React from 'react';
-import { Code2, MessageCircle, Clock, CheckCircle, ArrowRight } from 'lucide-react';
+import React from "react";
+import {
+  Code2,
+  MessageCircle,
+  Clock,
+  CheckCircle,
+  ArrowRight,
+} from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 text-white">
       {/* CTA Section */}
-      <section id="contato" className="bg-gradient-to-r from-blue-600 to-purple-600 py-16">
+      <section
+        id="contato"
+        className="bg-gradient-to-r from-blue-600 to-purple-600 py-16"
+      >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex justify-center mb-6">
             <CheckCircle className="h-12 w-12 text-green-400" />
@@ -16,9 +25,9 @@ const Footer: React.FC = () => {
           <p className="text-xl mb-8 opacity-90">
             Clique agora, fale direto comigo e receba um orçamento personalizado
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <a 
+            <a
               href="https://wa.me/5531976091443?text=Oi, vim pelo site portfolio."
               target="_blank"
               rel="noopener noreferrer"
@@ -29,7 +38,7 @@ const Footer: React.FC = () => {
               <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
-          
+
           <div className="flex flex-wrap justify-center gap-6 text-sm opacity-90">
             <div className="flex items-center">
               <Clock className="h-4 w-4 mr-2" />
@@ -55,9 +64,9 @@ const Footer: React.FC = () => {
               <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-lg">
                 <Code2 className="h-6 w-6 text-white" />
               </div>
-              <span className="text-xl font-bold">Mateus Dev</span>
+              <span className="text-xl font-bold">Guilherme Dev</span>
             </div>
-            
+
             <div className="text-center md:text-left">
               <p className="text-gray-400 mb-2">
                 Desenvolvedor Web Especializado
@@ -67,10 +76,10 @@ const Footer: React.FC = () => {
               </p>
             </div>
           </div>
-          
+
           <div className="border-t border-gray-800 mt-8 pt-8 text-center">
             <p className="text-gray-400">
-              © 2024 Mateus Dev. Todos os direitos reservados.
+              © 2024 Guilherme Dev. Todos os direitos reservados.
             </p>
             <p className="text-sm text-gray-500 mt-2">
               Transformando ideias em sites que vendem desde 2020
